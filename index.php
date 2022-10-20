@@ -76,7 +76,7 @@
 				<div>
 					<div class="col-sm-6" >
 						<div class="logo pull-left" >
-                            <a href="index.php" style="background-color:#069;color:#FFF">Htoys
+                            <a href="index.php" style="background-color:#069;color:#FFF">ATNshop
                             <img src="img/logo 45.png" width="150" height="160"></a>
 						</div>
 					</div>
@@ -236,7 +236,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy;Htoys</p>
+                        <p>&copy;ATNshop</p>
                     </div>
                 </div>
                 
