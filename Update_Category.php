@@ -1,7 +1,4 @@
-<?php
-if(isset($_SESSION['admin']) && $_SESSION['admin']==1)
-{
-?>
+
 <!-- Bootstrap --> 
 <link rel="stylesheet" type="text/css" href="style.css"/>
 	<meta charset="utf-8" />
@@ -94,11 +91,3 @@ if(isset($_SESSION['admin']) && $_SESSION['admin']==1)
 
    }
     ?>
-<?php
-}
-else 
-{
-    echo '<script>alert("You are not administrator")</script>';
-    echo '<meta http-equiv="refresh" content="0;URL=index.php"/>';
-}
-?>

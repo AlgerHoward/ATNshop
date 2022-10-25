@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Htoys.com</title>
+    <title>Shoptoy_online</title>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -53,8 +53,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> 0832085972</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> Hienhilock@gmail.com</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> 0939868686</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> Shoptoyj@gmail.com</a></li>
 							</ul>
 						</div>
 					</div>
@@ -69,15 +69,14 @@
 					</div>
 				</div>
 			</div>
-		</div> <!---/header_top-->
+		</div><!--/header_top-->
 		
-		<div class="header-middle" style="background-color:blue"><!--header-middle-->
+		<div class="header-middle" style="background-color:whrie"><!--header-middle-->
 			<div class="container" >
 				<div>
 					<div class="col-sm-6" >
 						<div class="logo pull-left" >
-                            <a href="index.php" style="background-color:#069;color:#FFF">ATNshop
-                            <img src="img/logo 45.png" width="150" height="160"></a>
+                            <a href="index.php" style="background-color:black;color:#FFF">Shoptoy_online
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -194,39 +193,10 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2>ABOUT<span> US</span></h2>
-                        <p>The largest children's toy store system in Vietnam</p>
-                        <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <!-- <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a> -->
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </div>
+
+                        
                     </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">User</h2>
-                        <ul>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="#">Bill</a></li>
-                            <li><a href="#">Interests</a></li>
-                            <li><a href="#">Supplier</a></li>
-                            <li><a href="#">Other information</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Information</h2>
-                        <ul>
-                            <li><a href="#">Google Map</a></li>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8615751021507!2d105.77601101474247!3d10.02827979283174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a088216a9ce555%3A0xc42730e6d0681b82!2zMTYwIMSQxrDhu51uZyAzMCBUaMOhbmcgNCwgWHXDom4gS2jDoW5oLCBOaW5oIEtp4buBdSwgQ-G6p24gVGjGoSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1596131948103!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </ul>                        
-                    </div>
-                </div> 
+                </div>           
             </div>
         </div>
         </div> <!-- End footer top area -->
@@ -236,18 +206,10 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy;ATNshop</p>
+                        <p>&copy;Shoptoy_online</p>
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="footer-card-icon">
-                        <i class="fa fa-cc-discover"></i>
-                        <i class="fa fa-cc-mastercard"></i>
-                        <i class="fa fa-cc-paypal"></i>
-                        <i class="fa fa-cc-visa"></i>
-                    </div>
-                </div>
             </div>
         </div>
     </div> <!-- End footer bottom area -->
@@ -272,7 +234,7 @@
     <script type="text/javascript" src="js/bxslider.min.js"></script>
 	<script type="text/javascript" src="js/script.slider.js"></script>
     
-
+    <!--data table-->
     <script src="js/jquery.dataTables.min.js"/></script>
     <script src="js/dataTables.bootstrap.min.js"/></script>
     <script src="https://cdn.datatables.net/fixedheader/3.1.2/css/fixedHeader.bootstrap.min.css"></script>

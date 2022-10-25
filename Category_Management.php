@@ -1,7 +1,4 @@
-<?php
-    if(isset($_SESSION['admin']) && $_SESSION['admin']==1)
-    {
-?> 
+
         <!-- Bootstrap --> 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script>
@@ -19,7 +16,7 @@
             if(isset($_GET["function"])=="del") {
                 if(isset($_GET['id'])) {
                     $id = $_GET['id'];
-                    mysqli_query($conn, "DELETE FROM category WHERE Cat_ID='$id'");
+                    pg_query($conn, "DELETE FROM category WHERE Cat_ID='$id'");
                 } 
             }
         ?>
@@ -44,8 +41,7 @@
             <?php
                 include_once("connection.php");
                 $No=1;
-                $result = mysqli_query($conn, "SELECT * FROM category");
-                while($row=mysqli_fetch_array($result, MYSQLI_ASSOC))
+                $result = pg_query($conn, "SELECT * FROM category");
                 {
             ?>
             <tr>
@@ -66,12 +62,12 @@
         </table>  
         
         
-        
-        <div class="row" style="background-color:#FFF">
+        <!--New button Add, delete all-->
+        <div class="row" style="background-color:#FFF"><!--Function button-->
             <div class="col-md-12">
                 
             </div>
-        </div>
+        </div><!--Function button-->
          </form>
  <?php
    /* }
@@ -79,11 +75,4 @@
     {
         echo '<meta http-equiv="refresh" content="0;URL=Category_Management.php"/>';
     }*/
-?>
-<?php
-    }
-    else{
-        echo '<script>alert("You are not administrator")</script>';
-        echo '<meta http-equiv="refresh" content="0;URL=index.php"/>';
-    }
 ?>

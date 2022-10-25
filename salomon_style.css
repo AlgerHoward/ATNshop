@@ -5,32 +5,32 @@
 a{
 	text-decoration: none;
 }
-.TableSanpham {
+.Tableproduct {
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 }
-.TableSanpham td {
+.Table td {
 	border: dotted 1px #999;
 	text-align: center;
 	padding: 7px 10px 7px 10px;
 	background: #FFF;
 }
-.TenSanPham {
+.Nameproduct {
 	color: #06C;
 	font-weight: bold;
 }
-.Gia {
+.price {
 	color: #F00;
 	font-weight:  bold;
 }
-.HinhSanPham {
+.product picture {
 	width: 130px;
 	height: 97px;
 	margin-bottom: 10px;
 }
-.TableSanpham .tieude {
+.Tableproduct .tieude {
 	background: url('images/container_header_bg.png');
 	background-repeat: repeat-x;
 	text-align: left;
@@ -105,7 +105,7 @@ a{
 	color: #999999;
 	text-decoration: none;
 }
-
+/* end CSS Menu */
 
 /* Dropdown menu */
 
@@ -182,7 +182,7 @@ BODY {
 	height: 117px;
 	width: 1000px;
 }
-#Skin_Menu_Ngang {
+#Skin_Menu_horizontal{
 	height: 50px;
 	background:url(images/menu_bg.png);
 	background-repeat: repeat-x;
@@ -227,7 +227,7 @@ BODY {
 }
 /* End layout CSS */
 
-
+/* Css form template */
 .TableForm {
 	background:#ffffff;
 	font: 11px;
@@ -272,14 +272,16 @@ BODY {
 	padding: 2px;
 	margin-right: 5px;
 }
-#lblBatBuoc {
+#lblObligatory {
 	color: red;
 }
-.BatBuoc {
+.Obligatory {
 	color: red;
 }
 
+/* end css form */
 
+/* Css data sheet */
 .TableData{
     background:#ffffff;
     font: 11px;
@@ -299,7 +301,7 @@ BODY {
     text-align:center;
     width: 10%;
 }
-.TableData .cotNutChucNang{
+.TableData .cotfunction button{
     text-align:center;
     width: 50px;
 }
@@ -307,37 +309,37 @@ BODY {
     text-align:center;
     width: 30px;
 }
-.TableData .cotTen{
+.TableData .cotname{
     text-align:left;
     font-weight: bold;
     color: #2780B9;
     min-width: 150px;
 }
-.TableData .cotSo{
+.TableData .cotnumber{
     text-align:right;
 }
 .TableData .cotText{
     text-align:left;
 }
-.TableData .cotNgay{
+.TableData .cotday{
     text-align:center;
     width: 80px;
 }
-.TableData .cotHangSanXuat{
+.TableData .cotmanufacturedgoods{
     text-align:left;
     width: 20%;
 }
-.TableData .cotGia{
+.TableData .cotprice{
     text-align:right;
     font-weight: bold;
     width: 30%;
     color: red;
 }
-.TableData .cotSoLuong {
+.TableData .cotquantity {
     text-align: center;
     width: 5%;
 }
-.TableData .cotSoLuong  input{
+.TableData .cotnumberinput{
     text-align: center;
     font-weight: bold;
 }
@@ -349,13 +351,13 @@ BODY {
     background: #0776BE;
     padding: 3px;
 }
-.TableData .phantrang{
+.TableData .paging{
     text-align:right;
 }
-.TableData .themmoi{
+.TableData .addnew{
     text-align:right;
 }
-.TableData .khongdulieu {
+.TableData .no data {
     text-align: center;
     color: red;
 }
@@ -363,18 +365,18 @@ BODY {
     border: solid 1px #ccc;
 }
 
-/* Css chi tiết sản phẩm */
-.TenSanPhamLon {
+/* Css product details */
+.great product name {
 	color:#2780B9;
 	font-weight:bold;
 	font-size: 18px;
 }
-.GiaCu {
+.price of {
 	color: #990000;
 	text-decoration: line-through;
 	font-weight: bold;
 }
-.LienKetTinhNang, .LienKetTinhNang:visited {
+.feature link, .feature link:visited {
 	background: #0776BE;
 	color: #ffffff;
 	padding: 5px;
@@ -385,3 +387,4 @@ BODY {
 	border: solid 1px #CCCCCC;
 	margin-top: 5px;
 }
+/* end css product details*/

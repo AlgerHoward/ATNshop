@@ -1,7 +1,4 @@
-<?php
-if(isset($_SESSION['admin']) && $_SESSION['admin']==1)
-{
-?>
+
 <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="scripts/ckeditor/ckeditor.js"></script>
@@ -182,12 +179,4 @@ if(isset($_SESSION['admin']) && $_SESSION['admin']==1)
 			}		
 	    }
 	}	
-?>
-<?php
-}
-else 
-{
-    echo '<script>alert("You are not administrator")</script>';
-    echo '<meta http-equiv="refresh" content="0;URL=index.php"/>';
-}
 ?>

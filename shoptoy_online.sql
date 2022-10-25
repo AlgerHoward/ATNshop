@@ -1,8 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
-
+-- Host: 127.0.0.1
+-- Generation Time: Oct 14, 2022 at 10:43 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -15,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
-
+-- Database: `shoptoy_online`
 --
 
 -- --------------------------------------------------------
 
 --
-
+-- Table structure for table `category`
 --
 
 CREATE TABLE `category` (
@@ -31,22 +34,19 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `category`
+-- Dumping data for table `category`
 --
 
 INSERT INTO `category` (`Cat_ID`, `Cat_Name`, `Cat_Des`) VALUES
-('C001', 'Apple', 'Apple Product'),
-('C002', 'Laptop Dell', 'Dell Product'),
-('C003', 'Laptop Asus', 'Asus product'),
-('C004', 'Laptop HP', 'HP Product'),
-('C005', 'Computer mouse', 'Mouse Product'),
-('C006', 'Hard Drive', 'HDD Product'),
-('P004', 'Battery', 'Battery Product');
+('001', 'Food', 'MikTea Product '),
+('3', 'ToCo', 'MikTea Product'),
+('4', 'SoCoLa', 'MikTea Product'),
+('C002', 'Soda', 'MikTea Product');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `customer`
+-- Table structure for table `customer`
 --
 
 CREATE TABLE `customer` (
@@ -66,17 +66,16 @@ CREATE TABLE `customer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `customer`
+-- Dumping data for table `customer`
 --
 
 INSERT INTO `customer` (`Username`, `Password`, `CustName`, `gender`, `Address`, `telephone`, `email`, `CusDate`, `CusMonth`, `CusYear`, `SSN`, `ActiveCode`, `state`) VALUES
-('Admin', 'e10adc3949ba59abbe56e057f20f883e', 'Cục Mỡ', 0, 'Cần Thơ', '0706583174', 'datpv@gamil.com', 17, 8, 1999, '', '', 1),
-('Vdat', '83b4ef5ae4bb360c96628aecda974200', 'Phan Van Dat', 0, 'Tiền Giang', '0918232442', 'datpv@gmail.com', 21, 6, 2000, '', '', 0);
+('tuong', '25d55ad283aa400af464c76d713c07ad', 'Nguyen Ba Tuong', 1, 'Can Tho', '0939868686', 'T4567@gmail.com.vn', 3, 5, 2002, '', '', 1);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `orders`
+-- Table structure for table `orders`
 --
 
 CREATE TABLE `orders` (
@@ -91,7 +90,7 @@ CREATE TABLE `orders` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `product`
+-- Table structure for table `product`
 --
 
 CREATE TABLE `product` (
@@ -108,58 +107,57 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `product`
+-- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`Product_ID`, `Product_Name`, `Price`, `oldPrice`, `SmallDesc`, `DetailDesc`, `ProDate`, `Pro_qty`, `Pro_image`, `Cat_ID`) VALUES
-('C004', 'HP 15s-du1035TX', 16000000, '0.00', '', '', '2020-12-24 06:48:25', 20, 'A11.jpg', 'C004'),
-('C006', 'Toshiba 500GB 5400rpm', 1155, '0.00', '', '', '2020-12-24 07:17:50', 20, 'M5.jpg', 'C006'),
-('P001', 'Macbook', 28000000, '0.00', 'Macbook', '&lt;p&gt;\r\n	New Iphone of Apple in 2019&lt;/p&gt;\r\n', '2020-12-23 18:55:58', 30, 'A9.jpg', 'C001'),
-('P002', 'Dell Inspiron 7570 i7', 20000000, '0.00', '', '<p>\r\n	New Ipad of Apple in 2019</p>\r\n', '2020-12-23 18:58:31', 10, 'A4.jpg', 'C002'),
-('P004', 'Battery laptop Dell Inspiron 1', 9000, '0.00', 'battery Dell', '', '2021-12-30 09:51:55', 10, 'M4.jpg', 'P004');
+('001', 'MikTea Food', 30, '0.00', '132', '', '2022-05-10 10:50:46', 2, 'images (2).png', '001'),
+('002', 'MikTea ToCo', 40, '0.00', '135', '', '2022-05-10 10:49:44', 3, 'images (7).png', '3'),
+('003', 'MikTea Soda', 50, '0.00', '145', '', '2022-05-14 10:27:52', 4, 'images (3) (2).png', 'C002'),
+('004', 'MikTea SoCoLa', 60, '0.00', '155', '', '2022-05-09 18:19:52', 5, 'images (9).jpg', '4');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `category`
+-- Indexes for table `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`Cat_ID`);
 
 --
--- Chỉ mục cho bảng `customer`
+-- Indexes for table `customer`
 --
 ALTER TABLE `customer`
   ADD PRIMARY KEY (`Username`);
 
 --
--- Chỉ mục cho bảng `orders`
+-- Indexes for table `orders`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`OrderID`),
   ADD KEY `username` (`username`);
 
 --
--- Chỉ mục cho bảng `product`
+-- Indexes for table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`Product_ID`),
   ADD KEY `Cat_ID` (`Cat_ID`);
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `orders`
+-- Constraints for table `orders`
 --
 ALTER TABLE `orders`
   ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`username`) REFERENCES `customer` (`Username`);
 
 --
--- Các ràng buộc cho bảng `product`
+-- Constraints for table `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`Cat_ID`) REFERENCES `category` (`Cat_ID`);
